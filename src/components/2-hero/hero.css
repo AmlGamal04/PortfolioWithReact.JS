@@ -1,0 +1,78 @@
+/* *******************************
+ table of contents
+**********************************
+1. Left section
+2. Right section ==> Animation
+3. Responsive Design (Media query)
+******************************** */
+
+/* *************************
+    1. Left section
+ ************************** */
+section.hero{
+    margin-top: 3rem;
+}
+section.hero .parent-avatar.flex{
+    align-items: end;
+    gap: 0.5rem;
+    min-height: 7rem;
+}
+section.hero .left-section{
+    flex-grow: 1;/* so that div takes up the rest of the empty space*/
+}
+section.hero .avatar{
+    width: 7rem;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgb(189, 185, 185) inset;
+}
+section.hero .icon-verified{
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+section.hero h1.title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+ }
+
+ section.hero p.sub-title{
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+    color: var(--subtitle);
+ }
+
+ section.hero .all-icons{
+    gap: 1.5rem;
+    font-size: 1.3rem;
+ }
+ section.hero .all-icons .icon{
+    transition: 0.3s;
+    color: var(--subtitle);
+ }
+ section.hero .all-icons .icon:hover{
+    color: var(--icon-hover);
+    font-size: 1.5rem;
+    cursor: pointer;
+ }
+/* ********************************
+    1. Right section ==> Animation
+ ********************************** */
+section.hero .animation{
+    width: 100%;
+    translate: 100px 55px;
+}
+
+/* =================================
+ 3- Responsive Design (Media query)
+====================================*/
+@media (max-width:1100px) {
+    section.hero .animation{
+        display: none;
+    }
+}
